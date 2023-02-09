@@ -1,0 +1,22 @@
+.Footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1rem 3rem;
+    max-width: 800px;
+    margin-inline: auto;
+    color: #fff;
+
+    .copyright {
+        p {
+            font-size: 0.9rem;
+            text-align: center;
+
+            span {
+                color: var(--accent-color);
+                font-weight: 800;
+            }
+        }
+    }
+}

@@ -1,0 +1,52 @@
+#skills {
+    .option {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        margin-bottom: 5rem;
+
+        button {
+            color: #000;
+            background: #fff;
+            padding: 0.6rem 1.2rem;
+            border-radius: 10px;
+            font-size: 0.9rem;
+            text-transform: capitalize;
+            font-weight: 600;
+            cursor: pointer;
+            border: none;
+            font-family: "Poppins";
+
+            &.active {
+                background: var(--accent-color);
+                font-weight: 500;
+                color: #fff;
+            }
+        }
+    }
+
+    .skills {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        justify-content: center;
+        margin-inline: auto;
+        max-width: 700px;
+        gap: 4rem;
+
+        @media screen and (max-width: 480px) {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 3rem;
+        }
+
+        .icons {
+            display: flex;
+            justify-content: center;
+
+            svg {
+                width: 95px;
+                height: 95px;
+                color: #fff;
+            }
+        }
+    }
+}

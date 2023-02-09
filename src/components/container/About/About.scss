@@ -1,0 +1,92 @@
+#about {
+    .about-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        place-items: center;
+
+        @media screen and (max-width: 768px) {
+            grid-template-columns: 1fr;
+        }
+
+        .left-about {
+            max-width: 350px;
+            height: 350px;
+            justify-self: center;
+
+            img {
+                object-fit: cover;
+                width: 100%;
+                height: 100%;
+                animation: float 6s ease-in-out infinite;
+            }
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(0%);
+            }
+            50% {
+                transform: translateY(-5%);
+            }
+            100% {
+                transform: translateY(0%);
+            }
+        }
+
+        .right-about {
+            color: #fff;
+            padding: 1rem;
+            display: flex;
+            flex-direction: column;
+
+            @media screen and (max-width: 768px) {
+                padding: 0;
+                margin-top: 2rem;
+            }
+
+            p {
+                font-size: 0.9rem;
+                margin-bottom: 1rem;
+                max-width: 450px;
+            }
+
+            .bio {
+                display: flex;
+                align-items: center;
+                gap: 3rem;
+                max-width: 200px;
+                font-size: 0.9rem;
+                margin-bottom: 1rem;
+
+                .bio-icon-key {
+                    display: flex;
+                    align-items: center;
+                    gap: 0.5rem;
+                }
+
+                .bio-value {
+                    white-space: nowrap;
+                }
+            }
+
+            a {
+                text-decoration: none;
+                color: #000;
+                font-weight: 600;
+                background: #fff;
+                padding: 0.6rem 1.5rem;
+                border-radius: 5px;
+                font-size: 0.9rem;
+                text-transform: capitalize;
+                width: fit-content;
+                cursor: pointer;
+                margin-top: 0.5rem;
+                transition: 0.3s;
+
+                &:hover {
+                    transform: scale(1.05);
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,169 @@
+#portfolio {
+    .work-data {
+        margin-top: 5rem;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+
+        @media screen and (max-width: 768px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @media screen and (max-width: 500px) {
+            grid-template-columns: 1fr;
+            gap: 2rem;
+        }
+
+        .project {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+
+            @media screen and (max-width: 500px) {
+                gap: 1rem;
+            }
+
+            .image {
+                max-width: 380px;
+                height: 250px;
+                margin-inline: auto;
+                position: relative;
+
+                &:hover .hover-layer {
+                    opacity: 1;
+                }
+
+                @media screen and (max-width: 500px) {
+                    max-width: 350px;
+                }
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 8px;
+                    object-fit: cover;
+                }
+
+                .hover-layer {
+                    background: var(--accent-color);
+                    width: 100%;
+                    height: 100%;
+                    z-index: 5;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    display: flex;
+                    gap: 1.5rem;
+                    justify-content: center;
+                    align-items: center;
+                    opacity: 0;
+                    transition: opacity 0.3s ease-in-out;
+
+                    a {
+                        width: 40px;
+                        height: 40px;
+                        background: rgba(255, 255, 255, 0.25);
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        border-radius: 50%;
+                        transition: all 0.3s ease-in-out;
+
+                        svg {
+                            color: #fff;
+                            font-size: 1.5rem;
+                        }
+
+                        &:hover {
+                            background-color: #fff;
+
+                            svg {
+                                color: var(--accent-color);
+                            }
+
+                            animation: blink 0.3s ease-in-out;
+                        }
+
+                        @keyframes blink {
+                            50% {
+                                transform: scale(0);
+                            }
+                            100% {
+                                transform: scale(1);
+                            }
+                        }
+                    }
+                }
+            }
+
+            .desc {
+                color: #fff;
+                font-size: 0.9rem;
+
+                @media screen and (max-width: 500px) {
+                    color: #fff;
+                    font-size: 0.9rem;
+                    max-width: 350px;
+                    align-self: center;
+                }
+            }
+        }
+    }
+
+    .collab {
+        margin-top: 3rem;
+        background: #fff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+        border-radius: 5px;
+        max-width: 700px;
+        margin-inline: auto;
+        flex-wrap: wrap;
+        gap: 1rem;
+
+        .collab-left {
+            h3 {
+                font-size: 1.5rem;
+
+                span {
+                    font-size: 3.5rem;
+                    color: var(--accent-color);
+
+                    @media screen and (max-width: 590px) {
+                        font-size: 2rem;
+                    }
+
+                    @media screen and (max-width: 360px) {
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+        }
+
+        .collab-right {
+            align-self: flex-end;
+            margin-bottom: 1.5rem;
+            background: var(--accent-color);
+            padding: 0.6rem 1.2rem;
+            border-radius: 10px;
+            font-size: 0.9rem;
+            cursor: pointer;
+
+            @media screen and (max-width: 500px) {
+                margin-bottom: 1rem;
+            }
+
+            &:hover {
+                background: #01ab4d;
+            }
+
+            a {
+                text-decoration: none;
+                color: #fff;
+                text-transform: capitalize;
+            }
+        }
+    }
+}

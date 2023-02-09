@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import "./Navbar.scss";
 import { FaInstagram, FaLinkedin, FaTwitter, FaGithub } from "react-icons/fa";
 import { useState } from "react";
+import logo from "../../assets/logo.png";
 
 function Navbar() {
     const [scroll, setScroll] = useState(false);
@@ -20,7 +21,9 @@ function Navbar() {
     return (
         <div className={scroll ? "Navbar scroll-active" : "Navbar"}>
             <div className="nav-container">
-                <div className="logo">JK</div>
+                <div className="logo">
+                    <img src={logo} alt="logo" />
+                </div>
                 <div
                     className={`hamburger ${active ? "active" : ""}`}
                     onClick={handleClick}
@@ -46,16 +49,24 @@ function Navbar() {
                 </ul>
                 <div className="social-links">
                     <div>
-                        <FaGithub />
+                        <a href="#">
+                            <FaGithub />
+                        </a>
                     </div>
                     <div>
-                        <FaLinkedin />
+                        <a href="#">
+                            <FaLinkedin />
+                        </a>
                     </div>
                     <div>
-                        <FaInstagram />
+                        <a href="#">
+                            <FaInstagram />
+                        </a>
                     </div>
                     <div>
-                        <FaTwitter />
+                        <a href="#">
+                            <FaTwitter />
+                        </a>
                     </div>
                 </div>
             </div>
