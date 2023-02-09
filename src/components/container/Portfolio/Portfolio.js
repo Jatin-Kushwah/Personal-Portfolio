@@ -22,11 +22,19 @@ function Portfolio() {
                                 <div className="image">
                                     <img src={work.img} alt="workImg" />
                                     <div className="hover-layer">
-                                        <a href="#">
+                                        <a
+                                            target="_blank"
+                                            href={work.gitLink}
+                                            rel="noopener noreferrer"
+                                        >
                                             <FiGithub />
                                         </a>
 
-                                        <a href="#">
+                                        <a
+                                            target="_blank"
+                                            href={work.deployLink}
+                                            rel="noopener noreferrer"
+                                        >
                                             <IoArrowRedoSharp />
                                         </a>
                                     </div>

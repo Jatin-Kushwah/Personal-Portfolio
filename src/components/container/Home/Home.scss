@@ -93,6 +93,7 @@
             font-size: 0.85rem;
             cursor: pointer;
         }
+
         @media screen and (max-width: 768px) {
             div {
                 display: none;
@@ -101,14 +102,29 @@
         .web {
             left: -18%;
             top: 30%;
+            animation: float 4.5s ease-in-out infinite;
         }
         .ui {
             top: 12%;
             right: -14%;
+            animation: float 4s ease-in-out infinite;
         }
         .backend-dev {
             bottom: 8%;
             right: -5%;
+            animation: float 3s ease-in-out infinite;
+        }
+    }
+
+    @keyframes float {
+        0% {
+            transform: translateY(0%);
+        }
+        50% {
+            transform: translateY(-30%);
+        }
+        100% {
+            transform: translateY(0%);
         }
     }
 }

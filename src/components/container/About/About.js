@@ -21,10 +21,13 @@ function About() {
                 <Fade right duration={1500}>
                     <div className="right-about">
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Doloribus architecto explicabo ex corrupti,
-                            impedit excepturi at sunt quisquam similique fugiat
-                            quidem mollitia quod illo exercitationem!
+                            Hi! Myself Jatin Kushwah, a computer science
+                            graduate from Jiwaji University in Gwalior with a
+                            passion for web development. Proficient in HTML,
+                            CSS, JavaScript, React, Node.js, and other
+                            technologies. Seeking to grow as a full-stack web
+                            developer and make a positive impact in the
+                            industry.
                         </p>
 
                         {bioData.map((bio) => (

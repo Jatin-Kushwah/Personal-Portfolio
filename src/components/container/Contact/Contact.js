@@ -1,12 +1,39 @@
-import React from "react";
-import { contacts } from "../../../Data";
+import React, { useRef } from "react";
+import { contacts, gitHub, insta, linkedin, twitter } from "../../../Data";
 import "./Contact.scss";
 import Fade from "react-reveal/Fade";
+import emailjs from "@emailjs/browser";
+import toast, { Toaster } from "react-hot-toast";
 import { FaInstagram, FaLinkedin, FaTwitter, FaGithub } from "react-icons/fa";
 
 function Contact() {
+    const form = useRef();
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+        emailjs
+            .sendForm(
+                "service_6q7c5at",
+                "portfolio-template-email",
+                form.current,
+                "PXdLbnud7WNM3PiXl"
+            )
+            .then(
+                (result) => {
+                    toast.success(
+                        `Thanks for contacting ${form.current.elements.user_name.value}!`
+                    );
+                    form.current.reset();
+                },
+                (error) => {
+                    toast.error("Failed to send email!");
+                }
+            );
+    };
+
     return (
         <div className="container" id="contact">
+            <Toaster />
             <Fade top distance="10%" duration={1500}>
                 <div className="title">
                     <span>reach me easily</span>
@@ -33,22 +60,38 @@ function Contact() {
                         })}
                         <div className="social-links">
                             <div>
-                                <a href="#">
+                                <a
+                                    target="_blank"
+                                    href={gitHub}
+                                    rel="noopener noreferrer"
+                                >
                                     <FaGithub />
                                 </a>
                             </div>
                             <div>
-                                <a href="#">
+                                <a
+                                    target="_blank"
+                                    href={linkedin}
+                                    rel="noopener noreferrer"
+                                >
                                     <FaLinkedin />
                                 </a>
                             </div>
                             <div>
-                                <a href="#">
+                                <a
+                                    target="_blank"
+                                    href={insta}
+                                    rel="noopener noreferrer"
+                                >
                                     <FaInstagram />
                                 </a>
                             </div>
                             <div>
-                                <a href="#">
+                                <a
+                                    target="_blank"
+                                    href={twitter}
+                                    rel="noopener noreferrer"
+                                >
                                     <FaTwitter />
                                 </a>
                             </div>
@@ -58,20 +101,31 @@ function Contact() {
                 <Fade right duration={1500}>
                     <div className="right-container">
                         <h3>Connect With Me</h3>
-                        <div className="row">
-                            <input type="text" placeholder="First Name" />
-                            <input type="text" placeholder="Last name" />
-                        </div>
-                        <div className="row">
-                            <input type="text" placeholder="Phone" />
-                            <input type="email" placeholder="Email" />
-                        </div>
-                        <div className="row">
-                            <textarea placeholder="message"></textarea>
-                        </div>
-                        <div className="btn">
-                            <a href="#">Send</a>
-                        </div>
+                        <form ref={form} onSubmit={sendEmail}>
+                            <div className="row">
+                                <input
+                                    type="text"
+                                    placeholder="Your Name"
+                                    name="user_name"
+                                />
+                            </div>
+                            <div className="row">
+                                <input
+                                    type="email"
+                                    placeholder="Your Email"
+                                    name="user_email"
+                                />
+                            </div>
+                            <div className="row">
+                                <textarea
+                                    placeholder="message"
+                                    name="message"
+                                ></textarea>
+                            </div>
+                            <div className="btn" onClick={sendEmail}>
+                                <input type="submit" value="Send" />
+                            </div>
+                        </form>
                     </div>
                 </Fade>
             </div>

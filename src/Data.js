@@ -10,7 +10,9 @@ import { AiFillHtml5 } from "react-icons/ai";
 import { IoLogoNodejs } from "react-icons/io";
 import { IoLogoJavascript } from "react-icons/io5";
 import { SiTypescript, SiMongodb, SiGmail } from "react-icons/si";
-import work1 from "./assets/work1.png";
+import work1 from "./assets/insta.png";
+import work2 from "./assets/ecom.png";
+import work3 from "./assets/weather.png";
 
 export const bioData = [
     {
@@ -46,22 +48,28 @@ export const icons = [
 
 export const workData = [
     {
+        id: 2,
+        img: work2,
+        name: "project 2",
+        gitLink: "https://github.com/Jatin-Kushwah/E-commerce-server",
+        deployLink: "https://github.com/Jatin-Kushwah/E-commerce-client",
+        desc: "My ecommerce webapp offers a wide selection of comic books and manga, making it the perfect destination for fans of the genre. Browse, purchase and enjoy your favorite titles in one convenient location.",
+    },
+    {
         id: 1,
         img: work1,
         name: "project 1",
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam minus, omnis unde facilis laboriosam, aut velit earum fugiat sunt aspernatur dolores. Sunt cum dolore repudiandae.",
-    },
-    {
-        id: 2,
-        img: work1,
-        name: "project 2",
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam minus, omnis unde facilis laboriosam, aut velit earum fugiat sunt aspernatur dolores. Sunt cum dolore repudiandae.",
+        gitLink: "https://github.com/Jatin-Kushwah/social-media-server",
+        deployLink: "https://client-app-waywm.ondigitalocean.app/",
+        desc: "I developed an Instagram clone using React, Node.js, and MongoDB. It features user authentication, media uploads, and a dynamic feed. I honed my full-stack skills and successfully brought the popular platform's functionality in this clone.",
     },
     {
         id: 3,
-        img: work1,
+        img: work3,
         name: "project 3",
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam minus, omnis unde facilis laboriosam, aut velit earum fugiat sunt aspernatur dolores. Sunt cum dolore repudiandae.",
+        gitLink: "https://github.com/Jatin-Kushwah/Weather-webApp",
+        deployLink: "https://weather-webapp-jt.netlify.app/",
+        desc: "My weather application project offers real-time weather updates with a user-friendly interface. It utilizes advanced weather APIs to provide accurate and local forecasts.",
     },
 ];
 
@@ -82,3 +90,8 @@ export const contacts = [
         text: "+917806856790",
     },
 ];
+
+export const gitHub = "https://github.com/Jatin-Kushwah";
+export const insta = "https://www.instagram.com/";
+export const linkedin = "https://www.linkedin.com/in/jatin-kushwah-1b6694255/";
+export const twitter = "https://twitter.com/";

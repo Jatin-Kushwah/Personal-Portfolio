@@ -3,6 +3,7 @@ import "./Navbar.scss";
 import { FaInstagram, FaLinkedin, FaTwitter, FaGithub } from "react-icons/fa";
 import { useState } from "react";
 import logo from "../../assets/logo.png";
+import { gitHub, insta, linkedin, twitter } from "../../Data";
 
 function Navbar() {
     const [scroll, setScroll] = useState(false);
@@ -49,22 +50,38 @@ function Navbar() {
                 </ul>
                 <div className="social-links">
                     <div>
-                        <a href="#">
+                        <a
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            href={gitHub}
+                        >
                             <FaGithub />
                         </a>
                     </div>
                     <div>
-                        <a href="#">
+                        <a
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            href={linkedin}
+                        >
                             <FaLinkedin />
                         </a>
                     </div>
                     <div>
-                        <a href="#">
+                        <a
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            href={insta}
+                        >
                             <FaInstagram />
                         </a>
                     </div>
                     <div>
-                        <a href="#">
+                        <a
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            href={twitter}
+                        >
                             <FaTwitter />
                         </a>
                     </div>
