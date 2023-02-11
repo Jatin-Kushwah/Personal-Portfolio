@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import "./Navbar.scss";
 import { FaInstagram, FaLinkedin, FaTwitter, FaGithub } from "react-icons/fa";
 import { useState } from "react";
+import { motion } from "framer-motion";
 import logo from "../../assets/logo.png";
 import { gitHub, insta, linkedin, twitter } from "../../Data";
 
@@ -20,7 +21,12 @@ function Navbar() {
     }, []);
 
     return (
-        <div className={scroll ? "Navbar scroll-active" : "Navbar"}>
+        <motion.div
+            initial={{ y: -25 }}
+            animate={{ y: -5 }}
+            transition={{ duration: 0.5 }}
+            className={scroll ? "Navbar scroll-active" : "Navbar"}
+        >
             <div className="nav-container">
                 <div className="logo">
                     <img src={logo} alt="logo" />
@@ -97,7 +103,7 @@ function Navbar() {
                 <a href="#portfolio">Portfolio</a>
                 <a href="#contact">Contact</a>
             </div>
-        </div>
+        </motion.div>
     );
 }
 

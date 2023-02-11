@@ -63,8 +63,13 @@
         align-items: center;
         justify-content: space-between;
 
+        .hamburger {
+            display: none;
+        }
+
         @media screen and (max-width: 768px) {
             .hamburger {
+                display: block;
                 position: relative;
                 width: 32px;
                 height: 40px;
