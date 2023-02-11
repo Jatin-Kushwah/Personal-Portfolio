@@ -49,10 +49,9 @@ function Portfolio() {
                                 </div>
                             </motion.div>
                             <motion.div
-                                initial={{ x: 0, opacity: 0 }}
-                                whileInView={{ x: [250, 0], opacity: 1 }}
-                                transition={{ duration: 1 }}
-                                exit={{ opacity: 0, y: 50 }}
+                                initial={{ opacity: 0 }}
+                                whileInView={{ opacity: 1 }}
+                                transition={{ duration: 1.1, delay: 0.3 }}
                                 className="desc"
                             >
                                 {work.desc}
