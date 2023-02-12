@@ -29,7 +29,9 @@ function Navbar() {
         >
             <div className="nav-container">
                 <div className="logo">
-                    <img src={logo} alt="logo" />
+                    <a href="#home">
+                        <img src={logo} alt="logo" />
+                    </a>
                 </div>
                 <div
                     className={`hamburger ${active ? "active" : ""}`}
