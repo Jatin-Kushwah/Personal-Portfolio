@@ -11,6 +11,16 @@ function Contact() {
 
     const sendEmail = (e) => {
         e.preventDefault();
+
+        const userName = form.current.elements.user_name.value;
+        const userEmail = form.current.elements.user_email.value;
+        const message = form.current.elements.message.value;
+
+        if (!userName || !userEmail || !message) {
+            toast.error("All fields are required");
+            return;
+        }
+
         emailjs
             .sendForm(
                 "service_6q7c5at",
@@ -52,7 +62,7 @@ function Contact() {
                     transition={{ duration: 1 }}
                     className="left-container"
                 >
-                    <h3>Say Hi Toady!</h3>
+                    <h3>Say Hi Today!</h3>
                     <p>
                         I am currently seeking new job opportunities and would
                         love to hear from recruiters about potential positions.
