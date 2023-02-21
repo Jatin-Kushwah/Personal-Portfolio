@@ -60,7 +60,7 @@ export const workData = [
         img: work1,
         name: "project 1",
         gitLink: "https://github.com/Jatin-Kushwah/social-media-server",
-        deployLink: "https://social-media-client-mocha.vercel.app/",
+        deployLink: "https://client-app-e2xl.onrender.com/",
         desc: "I developed an Instagram clone using React, Node.js, and MongoDB. It features user authentication, media uploads, and a dynamic feed. I honed my full-stack skills and successfully brought the popular platform's functionality in this clone.",
     },
     {
