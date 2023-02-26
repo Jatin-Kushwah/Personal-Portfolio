@@ -25,7 +25,7 @@ export const bioData = [
         id: 2,
         icon: <FaPhoneAlt />,
         key: "Phone",
-        value: "+917976586980",
+        value: "+917697845380",
     },
     {
         id: 3,
