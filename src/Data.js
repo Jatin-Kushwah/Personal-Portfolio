@@ -87,7 +87,7 @@ export const contacts = [
     {
         id: 3,
         icon: <FaPhoneAlt />,
-        text: "+917806856790",
+        text: "+917697845380",
     },
 ];
 
