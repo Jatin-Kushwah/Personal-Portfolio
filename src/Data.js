@@ -13,6 +13,7 @@ import { SiTypescript, SiMongodb, SiGmail } from "react-icons/si";
 import work1 from "./assets/insta.png";
 import work2 from "./assets/ecom.png";
 import work3 from "./assets/weather.png";
+import work4 from "./assets/AiImageGenerator.png";
 
 export const bioData = [
     {
@@ -47,6 +48,14 @@ export const icons = [
 ];
 
 export const workData = [
+    {
+        id: 4,
+        img: work4,
+        name: "project 4",
+        gitLink: "https://github.com/Jatin-Kushwah/AI-Image-Generator",
+        deployLink: "https://ai-image-generator-client-flax.vercel.app/",
+        desc: "My AI image generator project uses MERN stack and advanced AI models like DALL-E 2 and ChatGPT API to generate high-quality images from textual descriptions. It offers an interactive interface that showcases AI technology.",
+    },
     {
         id: 2,
         img: work2,
