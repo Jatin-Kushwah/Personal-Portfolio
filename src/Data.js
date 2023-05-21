@@ -14,6 +14,7 @@ import work1 from "./assets/insta.png";
 import work2 from "./assets/ecom.png";
 import work3 from "./assets/weather.png";
 import work4 from "./assets/AiImageGenerator.png";
+import work5 from "./assets/recipe.png";
 
 export const bioData = [
     {
@@ -48,6 +49,14 @@ export const icons = [
 ];
 
 export const workData = [
+    {
+        id: 5,
+        img: work5,
+        name: "project 5",
+        gitLink: "https://github.com/Jatin-Kushwah/recipe-app",
+        deployLink: "https://recipe-app-rosy-nine.vercel.app/",
+        desc: "A MERN stack recipe app with cuisine and category filters, search functionality, detailed recipe info, and an admin panel for adding/editing recipes. Simplifying cooking with convenience.",
+    },
     {
         id: 4,
         img: work4,
