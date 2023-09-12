@@ -15,6 +15,7 @@ import work2 from "./assets/ecom.png";
 import work3 from "./assets/weather.png";
 import work4 from "./assets/AiImageGenerator.png";
 import work5 from "./assets/recipe.png";
+import work6 from "./assets/chatverse.png";
 
 export const bioData = [
     {
@@ -49,6 +50,14 @@ export const icons = [
 ];
 
 export const workData = [
+    {
+        id: 6,
+        img: work6,
+        name: "project 6",
+        gitLink: "https://github.com/Jatin-Kushwah/Chat-App",
+        deployLink: "https://chatverse-leqo.onrender.com/",
+        desc: "Chatverse: A MERN chat app with Socket.io, offering real-time messaging, group chats, notifications, and secure JWT authentication for effortless  communication.",
+    },
     {
         id: 5,
         img: work5,
