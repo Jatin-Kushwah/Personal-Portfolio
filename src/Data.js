@@ -55,7 +55,8 @@ export const workData = [
         img: work6,
         name: "project 6",
         gitLink: "https://github.com/Jatin-Kushwah/Chat-App",
-        deployLink: "https://chatverse-leqo.onrender.com/",
+        deployLink: "https://github.com/Jatin-Kushwah/Chat-App",
+        // deployLink: "https://chatverse-leqo.onrender.com/",
         desc: "Chatverse: A MERN chat app with Socket.io, offering real-time messaging, group chats, notifications, and secure JWT authentication for effortless  communication.",
     },
     {
@@ -65,14 +66,6 @@ export const workData = [
         gitLink: "https://github.com/Jatin-Kushwah/recipe-app",
         deployLink: "https://recipe-app-rosy-nine.vercel.app/",
         desc: "A MERN stack recipe app with cuisine and category filters, search functionality, detailed recipe info, and an admin panel for adding/editing recipes. Simplifying cooking with convenience.",
-    },
-    {
-        id: 4,
-        img: work4,
-        name: "project 4",
-        gitLink: "https://github.com/Jatin-Kushwah/AI-Image-Generator",
-        deployLink: "https://ai-image-generator-client-flax.vercel.app/",
-        desc: "My AI image generator project uses MERN stack and advanced AI models like DALL-E 2 and ChatGPT API to generate high-quality images from textual descriptions. It offers an interactive interface that showcases AI technology.",
     },
     {
         id: 2,
@@ -98,6 +91,14 @@ export const workData = [
         deployLink: "https://weather-webapp-jt.netlify.app/",
         desc: "My weather application project offers real-time weather updates with a user-friendly interface. It utilizes advanced weather APIs to provide accurate and local forecasts.",
     },
+    // {
+    //     id: 4,
+    //     img: work4,
+    //     name: "project 4",
+    //     gitLink: "https://github.com/Jatin-Kushwah/AI-Image-Generator",
+    //     deployLink: "https://ai-image-generator-client-flax.vercel.app/",
+    //     desc: "My AI image generator project uses MERN stack and advanced AI models like DALL-E 2 and ChatGPT API to generate high-quality images from textual descriptions. It offers an interactive interface that showcases AI technology.",
+    // },
 ];
 
 export const contacts = [
