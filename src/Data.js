@@ -13,7 +13,7 @@ import { SiTypescript, SiMongodb, SiGmail } from "react-icons/si";
 import work1 from "./assets/insta.png";
 import work2 from "./assets/ecom.png";
 import work3 from "./assets/weather.png";
-import work4 from "./assets/AiImageGenerator.png";
+// import work4 from "./assets/AiImageGenerator.png";
 import work5 from "./assets/recipe.png";
 import work6 from "./assets/chatverse.png";
 
